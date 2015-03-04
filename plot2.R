@@ -28,7 +28,7 @@ with(dataSubset, plot(Time,
                       type = "l",
                       ylab = "Global Active Power (kilowatts)",
                       xlab = "",
-                      main = "Global Active Power vs. Time"))
+                      main = "Global Active Power over Time"))
 
 # Save plot to a PNG -----------------------------------------------------------
 
