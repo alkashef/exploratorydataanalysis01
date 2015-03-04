@@ -43,7 +43,6 @@ with(dataSubset, plot(Time,
 
 with(dataSubset, plot(Time,
                       Sub_metering_1,
-                      col = "black",
                       type = "n",
                       ylab = "Energy sub metering",
                       xlab = ""))
