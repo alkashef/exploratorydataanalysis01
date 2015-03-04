@@ -23,6 +23,8 @@ dataSubset <- data[data$Date >= startDate & data$Date <= endDate, ]
 
 # Generate Global active power histogram ---------------------------------------
 
+par(mfrow = c(1, 1)) # reset plot layout
+
 with(dataSubset, hist(Global_active_power,
                       col = "red",
                       xlab = "Global Active Power (kilowatts)",

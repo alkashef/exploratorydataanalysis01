@@ -23,6 +23,8 @@ dataSubset <- data[data$Date >= startDate & data$Date <= endDate, ]
 
 # Generate Global active power plot vs dateTime --------------------------------
 
+par(mfrow = c(1, 1)) # reset plot layout
+
 with(dataSubset, plot(Time,
                       Global_active_power,
                       type = "l",

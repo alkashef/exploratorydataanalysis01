@@ -23,6 +23,8 @@ dataSubset <- data[data$Date >= startDate & data$Date <= endDate, ]
 
 # Generate sub metering plots --------------------------------------------------
 
+par(mfrow = c(1, 1))
+
 with(dataSubset, plot(Time,
                       Sub_metering_1,
                       col = "black",
