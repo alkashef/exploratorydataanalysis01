@@ -30,9 +30,11 @@ with(dataSubset, plot(Time,
                       ylab = "Energy submetering",
                       xlab = ""))
 
-with(dataSubset, lines(Time, Sub_metering_1, col = "black"))
-with(dataSubset, lines(Time, Sub_metering_2, col = "red"))
-with(dataSubset, lines(Time, Sub_metering_3, col = "blue"))
+with(dataSubset, {
+    lines(Time, Sub_metering_1, col = "black")
+    lines(Time, Sub_metering_2, col = "red")
+    lines(Time, Sub_metering_3, col = "blue")
+})
 
 legend("topright",
        lty = c(1, 1, 1),
